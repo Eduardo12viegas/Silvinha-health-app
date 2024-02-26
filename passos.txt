@@ -1,0 +1,5 @@
+npx create-expo-app SilvinhaHealthApp
+
+npx expo start --localhost --android
+
+npm -i
