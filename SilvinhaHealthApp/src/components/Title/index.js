@@ -1,13 +1,10 @@
 import { View, Text } from "react-native";
+import  styles  from './style';
 
-import { styles } from './style';
-
-export default function App (){
+export default function Title() {
     return (
-        <view style={style.container}>
-            <Text style={StyleSheet.title}>Silvinha Health App</Text>
-            </view>
-
-
+        <View style={styles.boxTitle}>
+            <Text style={styles.textTitle}>Silvinha Health App</Text>
+        </View>
     );
 }

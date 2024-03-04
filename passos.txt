@@ -1,5 +1,9 @@
+Criar um projeto React Native com Expo
 npx create-expo-app SilvinhaHealthApp
 
-npx expo start --localhost --android
+Executar o projeto:
+    Estar na pasta do projeto
+    npx expo start --localhost --android
 
-npm -i
+Restaurar um projeto apos clonar:
+    npm i
