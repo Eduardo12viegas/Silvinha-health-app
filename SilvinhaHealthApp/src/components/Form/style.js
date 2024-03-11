@@ -9,6 +9,40 @@ const styles = StyleSheet.create({
         alignItems:"center",
         marginTop: 30,
     },
+    formGroup: {
+        width: '100%',
+        heigth: 'auto',
+        marginTop: 39,
+        padding: 10,
+    },
+    formLabel: {
+        color: "#000000",
+        fontSize: 18,
+        paddingLeft: 20,
+    },
+    input: {
+        width: '90%',
+        frontSize: 18,
+        borderRadius: 20,
+        backgroundColor: '#f6f6f6',
+        height: 40,
+        marging: 12,
+        paddingHorizontal: 15,
+    },
+    button: {
+        backgroundColor: '#FF0043',
+        borderRadius: 50,
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '90',
+        paddingVertical: 14,
+        marginLeft: 12,
+        margin: 30,
+    },
+    textButton: {
+        fontSize: 22,
+        color: '#FFFFFF',
+    },
 });
 
 export default styles;
