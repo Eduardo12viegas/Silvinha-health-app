@@ -5,10 +5,10 @@ export default function ResultImc(props) {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>
-        {ProgressBarAndroidComponent.messageResult}
+        {props.messageResult}
         </Text>
       <Text style={styles.textImc}>
-        {ProgressBarAndroidComponent.ResultImc}
+        {props.resultImc}
         </Text>
     </View>
   )

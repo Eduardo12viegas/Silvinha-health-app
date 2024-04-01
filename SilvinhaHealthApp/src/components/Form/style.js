@@ -22,11 +22,11 @@ const styles = StyleSheet.create({
     },
     input: {
         width: '90%',
-        frontSize: 18,
+        fontSize: 18,
         borderRadius: 20,
         backgroundColor: '#f6f6f6',
         height: 40,
-        marging: 12,
+        margin: 12,
         paddingHorizontal: 15,
     },
     button: {

@@ -1,4 +1,4 @@
-import { View, Text, TextInput, TouchableOpacity } from 'react-native'
+import { View, Text, TextInput, TouchableOpacity, Keyboard } from 'react-native'
 import React, { useState } from 'react'
 import styles from './style';
 import ResultImc from './ResultImc';
@@ -15,9 +15,9 @@ export default function Form() {
     }
 
     function validantionImc() {
-        if (weight != nul && height != null) {
+        if (weight != null && height != null) {
             imcCalculator();
-            keyboard.dismiss();
+            Keyboard.dismiss();
             setHeight(null);
             setWeight(null);
             setMessageImc("seu IMC é:");
@@ -35,7 +35,7 @@ export default function Form() {
                 <Text style={styles.formLabel}>Altura</Text>
                 <TextInput
                     style={styles.input}
-                    onChangeText={setweight}
+                    onChangeText={setHeight}
                     value={height ?? ""}
                     placeholder='Ex.80.360'
                     keyboardType='numeric'
@@ -43,6 +43,8 @@ export default function Form() {
                 <Text style={styles.formLabel}>Peso</Text>
                 <TextInput
                     style={styles.input}
+                    onChangeText={setWeight}
+                    value={weight ?? ""}
                     placeholder='Ex.80.360'
                     keyboardType='numeric'
                 />
