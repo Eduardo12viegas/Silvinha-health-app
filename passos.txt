@@ -1,9 +1,16 @@
 Criar um projeto React Native com Expo
 npx create-expo-app SilvinhaHealthApp
 
+Restaurar um projeto apos clonar:
+    npm i
+
 Executar o projeto:
     Estar na pasta do projeto
     npx expo start --localhost --android
 
-Restaurar um projeto apos clonar:
-    npm i
+Para instalar o expo router
+    npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar
+
+Alterar packger.json
+linha 4
+ "main": "expo-router/entry",
